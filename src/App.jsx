@@ -9,6 +9,7 @@ import DiscoverPeople from "./Components/SideBar/DiscoverPeople";
 import SideBarLogin from "./Components/SideBar/SideBarLeft-notLogged";
 import Profile from "./Pages/Profile";
 
+
 const App = () => {
   return (
     <Router>  
