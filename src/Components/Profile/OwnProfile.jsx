@@ -9,13 +9,15 @@ const OwnProfile = () =>{
 			<div>
 				<CreatePost/>
 			</div>
-			<br />
+      <br />
 			<div>
-        <Tabs defaultActiveKey="profile" id="fill-tab-example" className="mb-3" fill>
-          <Tab eventKey="home" title="Home">
+        <Tabs defaultActiveKey="answers" id="fill-tab-example" fill>
+          <Tab eventKey="answers" title="Respuestas" className="border-1">
+            <Post/>
+            <hr />
             <Post/>
           </Tab>
-          <Tab eventKey="longer-tab" title="Loooonger Tab">
+          <Tab eventKey="questions" title="Preguntas">
             <h1>asdf</h1>
           </Tab>
         </Tabs>

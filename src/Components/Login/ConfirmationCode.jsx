@@ -1,52 +1,51 @@
 const ConfirmationCode = () =>{
   return (
     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-    <div className="mx-auto flex w-full max-w-md flex-col space-y-16">
-      <div className="flex flex-col items-center justify-center text-center space-y-2">
-        <div className="font-semibold text-3xl">
-        <br />
-        <h1 className="text-center text-2xl mb-6 text-gray-600 font-bold font-sans">Codigo de verificacion</h1>
-        </div>
-        <div className="flex flex-row text-sm font-medium text-gray-400">
-          <p>We have sent a code to your email ba**@dipainhouse.com</p>
-        </div>
-      </div>
-
-      <div>
-        <form action="" method="post">
-          <div className="flex flex-col space-y-16">
-            <div className="flex flex-row items-center justify-between mx-auto w-full max-w-xs">
-              <div className="w-16 h-16 ">
-                <input className="w-full h-full flex flex-col items-center justify-center text-center px-5 outline-none rounded-xl border border-gray-200 text-lg bg-white focus:bg-gray-50 focus:ring-1 ring-blue-700" type="text" name="" id=""/>
-              </div>
-              <div className="w-16 h-16 ">
-                <input className="w-full h-full flex flex-col items-center justify-center text-center px-5 outline-none rounded-xl border border-gray-200 text-lg bg-white focus:bg-gray-50 focus:ring-1 ring-blue-700" type="text" name="" id=""/>
-              </div>
-              <div className="w-16 h-16 ">
-                <input className="w-full h-full flex flex-col items-center justify-center text-center px-5 outline-none rounded-xl border border-gray-200 text-lg bg-white focus:bg-gray-50 focus:ring-1 ring-blue-700" type="text" name="" id=""/>
-              </div>
-              <div className="w-16 h-16 ">
-                <input className="w-full h-full flex flex-col items-center justify-center text-center px-5 outline-none rounded-xl border border-gray-200 text-lg bg-white focus:bg-gray-50 focus:ring-1 ring-blue-700" type="text" name="" id=""/>
-              </div>
-            </div>
-
-            <div className="flex flex-col space-y-5">
-              <div className="flex justify-center"> 
-                <button className="flex flex-row items-center justify-center text-center w-3/4 border rounded-xl outline-none py-5 bg-blue-700 border-none text-white text-sm shadow-sm">
-                  Verify Account
-                </button>
-              </div>
-
-              <div className="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500">
-                <p>Didnt recieve code?</p> <a className="flex flex-row items-center text-blue-600" href="http://" target="_blank" rel="noopener noreferrer">Resend</a>
-              </div>
-              <br />
-            </div>
+      <div className="mx-auto flex w-full max-w-md flex-col space-y-16">
+        <div className="flex flex-col items-center justify-center text-center space-y-2">
+          <div className="font-semibold text-3xl">
+          <br />
+          <h1 className="text-center text-2xl mb-6 text-gray-600 font-bold font-sans">Codigo de verificación</h1>
           </div>
-        </form>
+          <div className="flex flex-row text-sm font-medium text-gray-400">
+            <p>Se ha enviado un codigo de verificación al email ba**@dipainhouse.com</p>
+          </div>
+        </div>
+        <div>
+          <form action="" method="post">
+            <div className="flex flex-col space-y-16">
+              <div className="flex flex-row items-center justify-between mx-auto w-full max-w-xs">
+                <div className="w-16 h-16 ">
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                </div>
+                <div className="w-16 h-16 ">
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                </div>
+                <div className="w-16 h-16 ">
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                </div>
+                <div className="w-16 h-16 ">
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                </div>
+              </div>
+
+              <div className="flex flex-col space-y-5">
+                <div className="flex justify-center"> 
+                  <button className="flex flex-row items-center justify-center text-center w-3/4 border rounded-xl outline-none py-5 bg-blue-700 border-none text-white text-sm shadow-sm hover:bg-blue-600">
+                    Verificar Cuenta
+                  </button>
+                </div>
+
+                <div className="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500 ">
+                  <p>¿No reciviste el codigo?</p> <a className="flex flex-row items-center text-blue-600 " href="http://" target="_blank" rel="noopener noreferrer">Reenvialo</a>
+                </div>
+                <br />
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
   );
 }
 
