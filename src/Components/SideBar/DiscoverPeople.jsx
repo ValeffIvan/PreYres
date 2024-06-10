@@ -1,9 +1,8 @@
 const DiscoverPeople = () => {
   return (
-    <div className="hidden sm:fixed sm:top-0 sm:right-0 sm:z-40 sm:w-64 sm:h-screen lg:block md:block sm:bg-white sm:border-l sm:border-r dark:sm:bg-gray-800 dark:sm:border-gray-700">
-      <h2 className="px-5 text-lg font-medium text-gray-800 dark:text-white">Descubrir usuarios</h2>
-
-      <div className="mt-8 space-y-4">
+    <div className="hidden sm:fixed sm:top-0 sm:right-0 sm:z-40 sm:w-64 sm:h-screen lg:block md:block sm:bg-white sm:border-l sm:border-r dark:sm:bg-gray-800 dark:sm:border-gray-700 pt-10">
+      <h2 className="px-5 text-lg font-medium text-gray-800 dark:text-white text-center">Descubrir usuarios</h2>
+      <div className="mt-8 space-y-4 flex flex-col items-center text-center">
         <button className="flex items-center w-full px-5 py-2 transition-colors duration-200 dark:hover:bg-gray-800 gap-x-2 hover:bg-gray-100 focus:outline-none">
           <img
             className="object-cover w-8 h-8 rounded-full"

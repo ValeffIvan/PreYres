@@ -1,15 +1,18 @@
 import { useState } from "react";
 import RegisterForm from "./RegisterForm";
+import { useNavigate } from "react-router-dom";
 
 
 const LoginForm = () => {
 
   const [login, setLogin] = useState(true);
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      localStorage.setItem('token',1);
+      localStorage.setItem('isAuth',1)
+      navigate('/')
       /*const user_data = { email, password };
       await signin(user_data);
       if (!isAuth){
@@ -46,7 +49,7 @@ const LoginForm = () => {
                 <label htmlFor="remember" className="text-gray-500 dark:text-gray-300">Recuerdame</label>
               </div>
             </div>
-            <button className="text-sm font-medium text-right text-primary-600 hover:underline dark:text-primary-500">Olvidé la contraseña</button>
+            <button className="text-sm font-medium text-right text-primary-600 hover:underline dark:text-primary-500 dark:text-white">Olvidé la contraseña</button>
           </div>
           <button type="submit" className="w-full mt-6 bg-indigo-600 hover:bg-blue-600 rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold font-sans">Iniciar sesión</button>
           <p className="text-sm font-light text-gray-500 dark:text-gray-400 flex justify-center">

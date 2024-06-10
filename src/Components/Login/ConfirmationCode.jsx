@@ -37,7 +37,7 @@ const ConfirmationCode = () =>{
                 </div>
 
                 <div className="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-gray-500 ">
-                  <p>¿No reciviste el codigo?</p> <a className="flex flex-row items-center text-blue-600 " href="http://" target="_blank" rel="noopener noreferrer">Reenvialo</a>
+                  <p>¿No reciviste el codigo?</p> <a className="flex flex-row items-center text-blue-600 " href="" target="_blank" rel="noopener noreferrer">Reenvialo</a>
                 </div>
                 <br />
               </div>

@@ -39,7 +39,7 @@ const CreatePost = () => {
             {`${characterCount}`}
           </span>
         </div>
-        <div className="flex items-center rounded-b-lg justify-between dark:border dark:bg-gray-700 dark:border-gray-700 pl-2">
+        <div className="flex items-center rounded-b-2xl justify-between dark:border dark:bg-gray-700 dark:border-gray-700 pl-2 pr-2">
           <div className="border-2 rounded-md">
             <input
               type="file"
@@ -61,13 +61,13 @@ const CreatePost = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
             </svg>
           </div>
-        <div className="flex justify-end">
-          <div className="flex items-center">
-            <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
-            <label htmlFor="link-checkbox" className="dark:text-white ms-2 text-sm font-medium text-gray-700 ">Preguntar como anónimo</label>
+          <div className="flex justify-end ">
+            <div className="flex items-center">
+              <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
+              <label htmlFor="link-checkbox" className="dark:text-white ms-2 text-sm font-medium text-gray-700 ">Preguntar como anónimo</label>
+            </div>
+            <button type="submit" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md "> Preguntar </button>
           </div>
-          <button type="submit" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md "> Preguntar </button>
-        </div>
         </div>
       </form>
     </div>
