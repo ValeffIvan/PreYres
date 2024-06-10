@@ -5,7 +5,7 @@ import Post from "../Home/Post";
 
 const OwnProfile = () =>{
   return (
-    <div className="items-center justify-center">
+    <div className="items-center justify-center xl:pr-24 xl:pl-24 l:pl-10">
 			<div>
 				<CreatePost/>
 			</div>

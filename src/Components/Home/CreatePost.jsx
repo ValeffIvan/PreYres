@@ -13,7 +13,7 @@ const CreatePost = () => {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.onload = () => {
-      setImage(reader.result); // Set the image state to the uploaded image
+      setImage(reader.result); 
     };
     reader.readAsDataURL(file);
   };
@@ -26,15 +26,15 @@ const CreatePost = () => {
       <br />
       <form>
         <div className="relative rounded-t-2xl border-2">
-          <textarea
-            id="postContent"
-            name="postContent"
-            rows="4"
-            className="w-full px-4 py-2 sm:text-sm sm:leading-5 resize-none rounded-t-2xl border-none"
-            placeholder="What's on your mind?"
-            onChange={handleTextInputChange}
-            maxLength={300}
-          ></textarea>
+        <textarea
+          id="postContent"
+          name="postContent"
+          rows="4"
+          className="w-full px-4 py-2 sm:text-sm sm:leading-5 resize-none rounded-t-2xl border-none outline-none"
+          placeholder="What's on your mind?"
+          onChange={handleTextInputChange}
+          maxLength={300}
+        ></textarea>
           <span className="absolute bottom-1 right-2 text-gray-500 text-sm pointer-events-none">
             {`${characterCount}`}
           </span>
