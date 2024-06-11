@@ -14,11 +14,11 @@ import SideBar from "./Components/SideBar/SideBarLeft-logged";
 
 const App = () => {
 
-  const [isAuth] = useState(localStorage.getItem('token'))
+  const [isAuth] = useState(localStorage.getItem('isAuth'))
 
   return (
     <Router>  
-        {isAuth ? <SideBar/> : <SideBarLogin/>}
+        {isAuth ? (<SideBar/>) : (<SideBarLogin/>)}
         <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="/profile" element={<Profile />} /> 

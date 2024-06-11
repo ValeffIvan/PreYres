@@ -1,4 +1,23 @@
+import { useNavigate } from "react-router-dom";
+
 const SideBar = () => {
+
+  const navigate = useNavigate();
+
+  const CloseSession =  () =>{
+    try {
+      localStorage.clear();
+      location.reload()
+      /*const user_data = { email, password };
+      await signin(user_data);
+      if (!isAuth){
+        setErrorMessage('Credenciales invalidas');
+      }*/
+    } catch (ex) {
+      console.error('Error al iniciar sesión:', ex);
+    }
+  }
+
     return (
       <div className="h-full px-3 pt-7 overflow-y-auto fixed top-0 left-0 z-40 w-96 hidden sm:fixed sm:h-screen lg:block md:block sm:bg-white sm:border-l sm:border-r dark:sm:bg-gray-800 dark:sm:border-gray-700">
         <div className="flex flex-col justify-center items-center ">
@@ -29,12 +48,11 @@ const SideBar = () => {
 
                 Configuración
               </button> 
-              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 mr-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
-              </svg>
-
-                Cerrar Sesión
+              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center" onClick={()=>CloseSession()}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
+                </svg>
+                  Cerrar Sesión
               </button> 
               <input placeholder="Buscar en PreYres..." className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full px-2 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark"/>
             </div>
