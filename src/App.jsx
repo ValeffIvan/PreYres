@@ -20,10 +20,21 @@ const App = () => {
     <Router>  
         {isAuth ? (<SideBar/>) : (<SideBarLogin/>)}
         <Routes>
-          <Route path="/" element={<Home />} /> 
-          <Route path="/profile" element={<Profile />} /> 
+          <Route path="/" element={
+            <>
+              <Home />
+              <DiscoverPeople />
+            </>
+          } />
+          <Route path="/profile" element={
+            <>
+              <Profile />
+              <DiscoverPeople />
+            </>
+          } />
+          
         </Routes>
-          <DiscoverPeople/> 
+        
     </Router>
   );
 }

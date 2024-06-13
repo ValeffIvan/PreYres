@@ -5,7 +5,7 @@ import Post from "../Home/Post";
 
 const OwnProfile = () =>{
   return (
-    <div className="items-center justify-center xl:pr-24 xl:pl-24 l:pl-10">
+    <div className="items-center justify-center xl:pr-24 xl:pl-24 l:pl-10 mt-5">
 			<div>
 				<CreatePost/>
 			</div>
@@ -15,7 +15,6 @@ const OwnProfile = () =>{
           <Tab eventKey="answers" title="Respuestas" className="border-1">
             <Post/>
             <hr />
-            <Post/>
           </Tab>
           <Tab eventKey="questions" title="Preguntas">
             <h1>asdf</h1>

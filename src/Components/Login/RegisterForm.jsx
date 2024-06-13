@@ -30,7 +30,7 @@ const RegisterForm = () => {
       {registered === 1 ? (
         <div className="w-full p-4 bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:border dark:border-gray-700">
           <div className="flex items-center">
-            <button className="flex items-center text-gray-900 dark:text-white">
+            <button className="flex items-center text-gray-900 dark:text-white" onClick={()=> setRegistered(3)}>
               <FaArrowLeft className="mr-2" /> Volver
             </button>
           </div>

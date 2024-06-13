@@ -11,12 +11,13 @@ const Post = () => {
             <button className="rounded-2xl border bg-neutral-100 px-3 py-1 text-xs font-semibold">Modificar</button>
             <button className="rounded-2xl border bg-neutral-100 px-3 py-1 text-xs font-semibold">Eliminar</button>
             <div className="text-xs text-neutral-500">2 hours ago</div>
+            
           </div>
+
         </div>
 
         <div className="mt-4 mb-6">
-          <div className="mb-3 text-xl font-bold">Nulla sed leo tempus, feugiat velit vel, rhoncus neque?</div>
-          <div className="text-sm text-neutral-600">Aliquam a tristique sapien, nec bibendum urna. Maecenas convallis dignissim turpis, non suscipit mauris interdum at. Morbi sed gravida nisl, a pharetra nulla. Etiam tincidunt turpis leo, ut mollis ipsum consectetur quis. Etiam faucibus est risus, ac condimentum mauris consequat nec. Curabitur eget feugiat massa</div>
+            <div className="mb-3 text-xl font-bold">¿Qué opinas sobre la nueva película que salió esta semana?</div>
         </div>
 
         <div>

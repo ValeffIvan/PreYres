@@ -12,7 +12,7 @@ const DiscoverPeople = () => {
 
           <div className="text-left rtl:text-right">
             <h1 className="text-sm font-medium text-gray-700 capitalize dark:text-white">Mia John</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400">11.2 Followers</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">11.2 Seguidores</p>
           </div>
         </button>
 
@@ -25,7 +25,7 @@ const DiscoverPeople = () => {
 
           <div className="text-left rtl:text-right">
             <h1 className="text-sm font-medium text-gray-700 capitalize dark:text-white">arthur melo</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400">1.2 Followers</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">1.2 Seguidores</p>
           </div>
         </button>
 
@@ -40,7 +40,7 @@ const DiscoverPeople = () => {
 
           <div className="text-left rtl:text-right">
             <h1 className="text-sm font-medium text-gray-700 capitalize dark:text-white">Jane Doe</h1>
-            <p className="text-xs text-gray-500 dark:text-gray-400">15.6 Followers</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">15.6 Seguidores</p>
           </div>
         </button>
       </div>
