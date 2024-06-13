@@ -1,8 +1,30 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# PreYres
 
-Currently, two official plugins are available:
+Red Social
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Requisitos
+
+<img src="https://www.muylinux.com/wp-content/uploads/2022/04/nodejs.png" alt="Node.js" width="200"/>
+
+Puedes instalarlo aca:
+https://nodejs.org/en
+## Iniciarlo Localmente
+
+Abre el proyecto desde la terminal, y sigue los siguientes pasos:
+
+1. Instala las dependencias
+
+```bash
+  npm install
+```
+
+2. Inicia el proyecto
+
+```bash
+  npm run dev
+```
+
