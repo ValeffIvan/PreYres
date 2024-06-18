@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const CreatePost = () => {
   const [characterCount, setCharacterCount] = useState(300);
   const [image, setImage] = useState(null); // Add a state to store the uploaded image
@@ -20,16 +21,17 @@ const CreatePost = () => {
 
   return (
     <form>
-      <div className="relative rounded-t-2xl border-2">
-      <textarea
-        id="postContent"
-        name="postContent"
-        rows="4"
-        className="w-full px-4 py-2 sm:text-sm sm:leading-5 resize-none rounded-t-2xl border-none outline-none"
-        placeholder="Escribe una pregunta..."
-        onChange={handleTextInputChange}
-        maxLength={300}
-      ></textarea>
+      <div className="relative rounded-t-2xl border-t-2 border-l-2 border-r-2">
+        <textarea
+          id="postContent"
+          name="postContent"
+          rows="4"
+          className="w-full px-4 py-2 sm:text-sm sm:leading-5 resize-none rounded-t-2xl border-none outline-none focus:outline-none border-color:transparent box-shadow:none"
+          style={{ boxShadow: 'none', outline: 'none', borderColor: 'transparent' }}
+          placeholder="Escribe una pregunta..."
+          onChange={handleTextInputChange}
+          maxLength={300}
+        ></textarea>
         <span className="absolute bottom-1 right-2 text-gray-500 text-sm pointer-events-none">
           {`${characterCount}`}
         </span>

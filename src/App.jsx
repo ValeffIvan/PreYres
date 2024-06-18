@@ -10,6 +10,8 @@ import SideBarLogin from "./Components/SideBar/SideBarLeft-notLogged";
 import Profile from "./Pages/Profile";
 import { useState } from "react";
 import SideBar from "./Components/SideBar/SideBarLeft-logged";
+import Configuration from "./Pages/ConfigurationPage";
+import Notifications from "./Pages/Notifications";
 
 
 const App = () => {
@@ -26,13 +28,24 @@ const App = () => {
               <DiscoverPeople />
             </>
           } />
-          <Route path="/profile" element={
+          <Route path="/perfil" element={
             <>
               <Profile />
               <DiscoverPeople />
             </>
           } />
-          
+          <Route path="/configuracion" element={
+            <>
+              <Configuration/>
+              <DiscoverPeople />
+            </>
+          } />
+          <Route path="/notificaciones" element={
+            <>
+              <Notifications/>
+              <DiscoverPeople />
+            </>
+          } />
         </Routes>
         
     </Router>

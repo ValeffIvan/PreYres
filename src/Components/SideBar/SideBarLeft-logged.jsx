@@ -28,7 +28,7 @@ const SideBar = () => {
               </h4>
             </div>
             <div className="mt-5 flex flex-col"> 
-              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center">
+              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center" onClick={()=>{navigate("/perfil")}}>
               <svg className="w-6 h-6 text-gray-800 dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
               </svg>
@@ -56,19 +56,19 @@ const SideBar = () => {
                       </div>
                     </a>
                   </div>
-                  <a href="#" className="block py-2 text-sm font-medium text-center text-gray-900 rounded-b-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white">
+                  <button className="block py-2 text-sm font-medium text-center text-gray-900 rounded-b-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white" onClick={()=>navigate("/notificaciones")}>
                     <div className="inline-flex items-center">
                       <svg className="w-4 h-4 me-2 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
                         <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
                       </svg>
                       Ver todos
                     </div>
-                  </a>
+                  </button>
                 </div>
               </div>
 
               
-              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center">
+              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center" onClick={()=>{navigate('/configuracion')}}>
               <svg className="w-6 h-6 text-gray-800 dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"/>
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
@@ -76,7 +76,7 @@ const SideBar = () => {
 
                 Configuración
               </button> 
-              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center" onClick={()=>CloseSession()}>
+              <button className="rounded-full bg-blue-800 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-700 flex items-center" onClick={()=>{CloseSession(); navigate("/")}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 mr-2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
                 </svg>
