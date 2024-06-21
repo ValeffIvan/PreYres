@@ -16,7 +16,7 @@ const Account = () => {
 
   return (
     <div className="max-w-md mx-auto p-4 pt-6 md:p-6 lg:p-12">
-      {isEditingUser === true ? (
+      {isEditingUser ? (
 
       <div className="mb-4">
         <p className="text-lg font-bold">Nombre de usuario</p>
@@ -66,7 +66,7 @@ const Account = () => {
       </div>
       )}
 
-      {isEditingEmail === true ? (
+      {isEditingEmail ? (
 
       <div className="mb-4">
         <p className="text-lg font-bold">Correo electrónico</p>
@@ -115,7 +115,7 @@ const Account = () => {
         </div>
       </div>
       )}
-      {isEditingPassword === true ? (
+      {isEditingPassword ? (
       <div className="mb-4">
         <p className="text-lg font-bold">Contraseña</p>
         <div className="flex">

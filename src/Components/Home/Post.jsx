@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const Post = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className='items-center justify-center'>  
-      <div className="p-5 shadow-md bg-white">
-        <div className="flex w-full items-center justify-between border-b pb-3">
+    <button className='items-center justify-center w-full' onClick={()=>navigate("/publicacion")}>  
+      <div className="p-5 shadow-md bg-white ">
+        <div className="flex w-full justify-between border-b pb-3">
           <div className="flex items-center space-x-3">
             <div className="h-8 w-8 rounded-full bg-slate-400 bg-[url('https://i.pravatar.cc/32')]"></div>
             <div className="text-lg font-bold text-slate-700">Joe Smith</div>
@@ -17,7 +21,7 @@ const Post = () => {
         </div>
 
         <div className="mt-4 mb-6">
-            <div className="mb-3 text-xl font-bold">¿Qué opinas sobre la nueva película que salió esta semana?</div>
+            <div className="mb-3 text-xl text-left font-bold">¿Qué opinas sobre la nueva película que salió esta semana?</div>
         </div>
 
         <div>
@@ -39,7 +43,7 @@ const Post = () => {
           </div>
         </div>
       </div>
-    </div>
+    </button>
     
   );
 }

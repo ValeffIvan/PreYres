@@ -12,6 +12,8 @@ import { useState } from "react";
 import SideBar from "./Components/SideBar/SideBarLeft-logged";
 import Configuration from "./Pages/ConfigurationPage";
 import Notifications from "./Pages/Notifications";
+import Publication from "./Components/Posts/Publication";
+import Ads from "./Components/SideBar/Ads";
 
 
 const App = () => {
@@ -21,31 +23,16 @@ const App = () => {
   return (
     <Router>  
         {isAuth ? (<SideBar/>) : (<SideBarLogin/>)}
+        {isAuth ? (<DiscoverPeople/>) :  (<Ads/>)}
+
+
         <Routes>
-          <Route path="/" element={
-            <>
-              <Home />
-              <DiscoverPeople />
-            </>
-          } />
-          <Route path="/perfil" element={
-            <>
-              <Profile />
-              <DiscoverPeople />
-            </>
-          } />
-          <Route path="/configuracion" element={
-            <>
-              <Configuration/>
-              <DiscoverPeople />
-            </>
-          } />
-          <Route path="/notificaciones" element={
-            <>
-              <Notifications/>
-              <DiscoverPeople />
-            </>
-          } />
+          <Route path="/" element={<Home />} />
+          <Route path="/perfil" element={<Profile/>} />
+          <Route path="/configuracion" element={<Configuration/>} />
+          <Route path="/notificaciones" element={<Notifications/>} />
+          <Route path="/publicacion" element={<Publication/>} />
+          <Route path="/comentario" element={<Configuration/>} />
         </Routes>
         
     </Router>
