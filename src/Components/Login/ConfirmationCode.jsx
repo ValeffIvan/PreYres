@@ -1,6 +1,6 @@
 const ConfirmationCode = () =>{
   return (
-    <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full bg-white rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
       <div className="mx-auto flex w-full max-w-md flex-col space-y-16">
         <div className="flex flex-col items-center justify-center text-center space-y-2">
           <div className="font-semibold text-3xl">
@@ -16,16 +16,16 @@ const ConfirmationCode = () =>{
             <div className="flex flex-col space-y-16">
               <div className="flex flex-row items-center justify-between mx-auto w-full max-w-xs">
                 <div className="w-16 h-16 ">
-                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" type="text" name="" id=""/>
                 </div>
                 <div className="w-16 h-16 ">
-                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" type="text" name="" id=""/>
                 </div>
                 <div className="w-16 h-16 ">
-                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" type="text" name="" id=""/>
                 </div>
                 <div className="w-16 h-16 ">
-                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="" id=""/>
+                  <input className="w-full h-full flex flex-col items-center justify-center text-center bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" type="text" name="" id=""/>
                 </div>
               </div>
 
@@ -66,12 +66,12 @@ export default ConfirmationCode;
  -->
 
 
-<div className="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+<div className="flex items-center min-h-screen bg-gray-50 bg-gray-900">
     <div className="container mx-auto">
-        <div className="max-w-md mx-auto my-10 bg-white dark:bg-gray-800 p-5 rounded-md shadow-sm">
+        <div className="max-w-md mx-auto my-10 bg-white bg-gray-800 p-5 rounded-md shadow-sm">
             <div className="text-center">
-                <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">Contact Us</h1>
-                <p className="text-gray-400 dark:text-gray-400">Fill up the form below to send us a message.</p>
+                <h1 className="my-3 text-3xl font-semibold text-gray-700 text-gray-200">Contact Us</h1>
+                <p className="text-gray-400 text-gray-400">Fill up the form below to send us a message.</p>
             </div>
             <div className="m-7">
                 <form action="https://api.web3forms.com/submit" method="POST" id="form">
@@ -82,22 +82,22 @@ export default ConfirmationCode;
 
 
                     <div className="mb-6">
-                        <label for="name" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
-                        <input type="text" name="name" id="name" placeholder="John Doe" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        <label for="name" className="block mb-2 text-sm text-gray-600 text-gray-400">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
                     </div>
                     <div className="mb-6">
-                        <label for="email" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="you@company.com" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        <label for="email" className="block mb-2 text-sm text-gray-600 text-gray-400">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
                     </div>
                     <div className="mb-6">
 
-                        <label for="phone" className="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
-                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        <label for="phone" className="text-sm text-gray-600 text-gray-400">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
                     </div>
                     <div className="mb-6">
-                        <label for="message" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+                        <label for="message" className="block mb-2 text-sm text-gray-600 text-gray-400">Your Message</label>
 
-                        <textarea rows="5" name="message" id="message" placeholder="Your Message" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" required></textarea>
                     </div>
                     <div className="mb-6">
                         <button type="submit" className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Send Message</button>

@@ -74,11 +74,11 @@ const SideBar = () => {
           </div>
         </div>
       ) : (
-        <div className="h-full px-3 pt-7 overflow-y-auto fixed top-0 left-0 z-40 w-96 hidden sm:fixed sm:h-screen lg:block md:block sm:bg-white sm:border-l sm:border-r dark:sm:bg-gray-800 dark:sm:border-gray-700">
+        <div className="h-full px-3 pt-7 overflow-y-auto fixed top-0 left-0 z-40 w-96 hidden sm:fixed sm:h-screen lg:block md:block sm:bg-white sm:border-l sm:border-r sm:bg-gray-800 sm:border-gray-700">
           <div className="flex flex-col justify-center items-center">
             <div className="rounded-[20px] max-w-[300px] flex flex-col w-full">
               <button className="text-center" onClick={()=>navigate("/")}>
-                <h4 className="text-xl font-bold text-navy-700 dark:text-white">PreYres</h4>
+                <h4 className="text-xl font-bold text-navy-700 text-white">PreYres</h4>
               </button>
               <div className="mt-5 flex flex-col">
                 <button
@@ -86,7 +86,7 @@ const SideBar = () => {
                   onClick={() => navigate("/perfil")}
                 >
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-white mr-2"
+                    className="w-6 h-6 text-gray-800 text-white mr-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -111,7 +111,7 @@ const SideBar = () => {
                       onClick={() => setDropdownOpen(!dropdownOpen)}
                     >
                       <svg
-                        className="w-6 h-6 text-gray-800 dark:text-white mr-2"
+                        className="w-6 h-6 text-gray-800 text-white mr-2"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -152,7 +152,7 @@ const SideBar = () => {
                           onClick={() => navigate("/notificaciones")}>
                           <div className="inline-flex items-center">
                             <svg
-                              className="w-4 h-4 me-2 text-gray-500 dark:text-gray-400"
+                              className="w-4 h-4 me-2 text-gray-500 text-gray-400"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="currentColor"
@@ -171,7 +171,7 @@ const SideBar = () => {
                       onClick={() => setDropdownOpen(!dropdownOpen)}
                     >
                       <svg
-                        className="w-6 h-6 text-gray-800 dark:text-white mr-2"
+                        className="w-6 h-6 text-gray-800 text-white mr-2"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -197,7 +197,7 @@ const SideBar = () => {
                   onClick={() => navigate("/configuracion")}
                 >
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-white mr-2"
+                    className="w-6 h-6 text-gray-800 text-white mr-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -248,7 +248,7 @@ const SideBar = () => {
                 </button>
                 <input
                   placeholder="Buscar en PreYres..."
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full px-2 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full px-2 py-2 pl-5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark"
                 />
               </div>
             </div>

@@ -36,7 +36,7 @@ const CreatePost = () => {
           {`${characterCount}`}
         </span>
       </div>
-      <div className="flex items-center rounded-b-2xl justify-between dark:border dark:bg-gray-700 dark:border-gray-700 pl-2 pr-2">
+      <div className="flex items-center rounded-b-2xl justify-between border bg-gray-700 border-gray-700 pl-2 pr-2">
         <div className="border-2 rounded-md">
           <input
             type="file"
@@ -61,7 +61,7 @@ const CreatePost = () => {
         <div className="flex justify-end ">
           <div className="flex items-center">
             <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
-            <label htmlFor="link-checkbox" className="dark:text-white ms-2 text-sm font-medium text-gray-700 ">Preguntar como anónimo</label>
+            <label htmlFor="link-checkbox" className="text-white ms-2 text-sm font-medium text-gray-700 ">Preguntar como anónimo</label>
           </div>
           <button type="submit" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md "> Preguntar </button>
         </div>

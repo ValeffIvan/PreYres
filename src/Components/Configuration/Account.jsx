@@ -15,7 +15,7 @@ const Account = () => {
   }, []);
 
   return (
-    <div className="max-w-md mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <div className="w-3/4 mx-auto p-4 pt-6 md:p-6 lg:p-12">
       {isEditingUser ? (
 
       <div className="mb-4">
@@ -32,7 +32,7 @@ const Account = () => {
           </div>
           <div className="flex justify-end">
             <button
-              className="bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+              className="mr-3 bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
             >
               Aceptar
             </button>
@@ -82,7 +82,7 @@ const Account = () => {
           </div>
           <div className="flex justify-end">
             <button
-              className="bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+              className="mr-3 bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
             >
               Aceptar
             </button>
@@ -130,12 +130,12 @@ const Account = () => {
           </div>
           <div className="flex justify-end">
             <button
-              className="bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+              className="mr-3 bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
             >
               Aceptar
             </button>
             <button
-              className="bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full" onClick={setIsEditingPassword(false)}
+              className="bg-indigo-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full" onClick={()=>setIsEditingPassword(false)}
             >
               Cancelar
             </button>

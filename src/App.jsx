@@ -14,6 +14,7 @@ import Configuration from "./Pages/ConfigurationPage";
 import Notifications from "./Pages/Notifications";
 import Publication from "./Components/Posts/Publication";
 import Ads from "./Components/SideBar/Ads";
+import SearchPage from "./Pages/SearchPage";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/notificaciones" element={<Notifications/>} />
           <Route path="/publicacion" element={<Publication/>} />
           <Route path="/comentario" element={<Configuration/>} />
+          <Route path="/buscador" element={<SearchPage/>} />
         </Routes>
         
     </Router>

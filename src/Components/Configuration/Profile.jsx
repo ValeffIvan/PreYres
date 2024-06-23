@@ -35,29 +35,27 @@ const ProfileConfig = () => {
   }, []);
 
   return (
-    <>
-      <div className="container mx-auto py-14  flex flex-col  justify-between">
-          <div> 
-            <h1 className="font-bold tracking-normal text-3xl">Url del Perfil</h1>  
-            {isEditing === false ?(
-              <div className="flex">
-                <input type="text" disabled className="w-full rounded-full mr-5 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl}/>
-                <button onClick={() => setIsEditing(true)} className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Modificar</button>
-              </div>
-            ) : (
-            <form className="flex">
-                <input type="text" className="w-full rounded-full mr-5 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl} onChange={(e) => setEditedUrl(e.target.value)} />
-                <button type="submite" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Aceptar</button>
-                <button onClick={() => setIsEditing(false)} className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Cancelar</button>
-            </form>
-            )}
-          </div>
-          <div className="items-center">
-            <label htmlFor="link-checkbox" className="dark:text-black ms-2 text-sm font-medium mr-3">¿Pueden realizarme preguntas de forma anonima?</label>
-            <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
+    <div className="container mx-auto py-10 flex flex-col w-3/4 justify-between">
+        <div> 
+          <h1 className="font-bold tracking-normal text-3xl">Url del Perfil</h1>  
+          {isEditing === false ?(
+            <div className="flex">
+              <input type="text" disabled className="w-full rounded-full mr-5 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl}/>
+              <button onClick={() => setIsEditing(true)} className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Modificar</button>
+            </div>
+          ) : (
+          <form className="flex">
+              <input type="text" className="w-full rounded-full mr-5 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl} onChange={(e) => setEditedUrl(e.target.value)} />
+              <button type="submite" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Aceptar</button>
+              <button onClick={() => setIsEditing(false)} className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Cancelar</button>
+          </form>
+          )}
         </div>
+        <div className="items-center mt-2">
+          <label htmlFor="link-checkbox" className="text-black ms-2 text-sm font-medium mr-3">¿Pueden realizarme preguntas de forma anonima?</label>
+          <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
       </div>
-    </>
+    </div>
   );
 }
 

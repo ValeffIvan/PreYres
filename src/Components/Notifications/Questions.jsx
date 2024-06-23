@@ -23,10 +23,10 @@ const Questions = () => {
           {isAnswer === false? (
           <div className="flex justify-center"> 
             <div className="flex items-center  text-slate-500 text-center">
-              <button className="flex cursor-pointer items-center transition hover:text-white bg-green-500 hover:bg-green-700 mr-5 rounded-full p-2 text-lg text-white" onClick={() => setIsAnswer(true)}>
+              <button className="flex cursor-pointer items-center transition hover:text-white bg-green-500 hover:bg-green-700 mr-5 rounded-full p-3 text-lg text-white" onClick={() => setIsAnswer(true)}>
                 Responder
               </button>
-              <button className="flex cursor-pointer items-center transition hover:text-white bg-red-500 hover:bg-red-700  rounded-full p-2 text-lg text-white">
+              <button className="flex cursor-pointer items-center transition hover:text-white bg-red-500 hover:bg-red-700  rounded-full p-3 text-lg text-white">
                 Eliminar
               </button>
             </div>
