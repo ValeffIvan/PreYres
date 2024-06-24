@@ -16,8 +16,8 @@ const Configuration = () => {
             </svg><span className='text-black-100'>Configuración</span>
           </span>
         </h1>
-        <div className="border-black border-1 h-full rounded-xl">
-          <Tabs defaultActiveKey="profile" id="fill-tab-example" fill className='sm:bg-gray-800 sm:border-gray-700 hover:sm:bg-gray-800 active:sm:bg-gray-800 link:sm:bg-gray-800 rounded-t-lg color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-tabs-link-active-color": "white", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
+        <div className="h-full rounded-xl">
+          <Tabs defaultActiveKey="profile" id="fill-tab-example" fill className='bg-gray-800 border-gray-700 hover:bg-gray-800 active:bg-gray-800 link:bg-gray-800 rounded-t-xl color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-tabs-link-active-color": "white", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
             <Tab eventKey="profile" title="Perfil" className='text-black  h-full flex-grow'>
               <ProfileConfig />
             </Tab>

@@ -27,7 +27,7 @@ const SearchPage = () => {
         />
       </div>
       <div className="mr-4 ml-4">
-      <Tabs defaultActiveKey="questions" id="fill-tab-example" fill className='sm:bg-gray-800 sm:border-gray-700 hover:sm:bg-gray-800 active:sm:bg-gray-800 link:sm:bg-gray-800 rounded-t-xl color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-tabs-link-active-color": "white", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
+      <Tabs defaultActiveKey="questions" id="fill-tab-example" fill className='sm:bg-gray-800 sm:border-gray-700 hover:sm:bg-gray-800 active:sm:bg-gray-800 link:sm:bg-gray-800 rounded-t-xl color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
           <Tab eventKey="questions" title="Preguntas" className='text-black bg-gray-100 h-full'>
            <People />
           </Tab>

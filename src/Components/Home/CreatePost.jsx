@@ -58,8 +58,8 @@ const CreatePost = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
         </div>
-        <div className="flex justify-end ">
-          <div className="flex items-center">
+        <div className="flex justify-end text-left">
+          <div className="flex items-center text-left">
             <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
             <label htmlFor="link-checkbox" className="text-white ms-2 text-sm font-medium text-gray-700 ">Preguntar como anónimo</label>
           </div>

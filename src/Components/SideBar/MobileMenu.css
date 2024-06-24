@@ -10,8 +10,16 @@ body {
 .group:hover .group-hover\:flex-grow {
     flex-grow: 1;
 }
-@media (min-width: 768px) {
-  .MobileMenu {
-    display: none;
-  }
+
+.MobileMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* O el color de fondo que desees */
+  z-index: 10; /* Ajusta según sea necesario */
+}
+
+body {
+  padding-bottom: 70px; /* Ajusta este valor según la altura de tu MobileMenu */
 }
