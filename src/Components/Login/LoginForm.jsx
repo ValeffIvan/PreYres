@@ -26,19 +26,19 @@ const LoginForm = () => {
   return (
     <>
     {login ?
-      (<div className="w-full bg-white rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
-      <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+      (<div className="w-full rounded-lg shadow border md:mt-0 max-w-md xl:p-0 bg-gray-800 border-gray-700">
+      <div className="p-6 space-y-4 md:space-y-6 p-8">
         <h1 className="text-l font-bold leading-tight text-center tracking-tight md:text-2xl text-white">
             Inicia sesion
         </h1>
         <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 text-white">Correo electrónico</label>
-            <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 text-white " placeholder="Correo Electrónico"  />
+            <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 text-white " placeholder="Correo Electrónico"  />
           </div>
           <div>
             <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 text-white">Contraseña</label>
-            <input type="password" name="password" id="password" placeholder="Contraseña" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark"  />
+            <input type="password" name="password" id="password" placeholder="Contraseña" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark"  />
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-start">

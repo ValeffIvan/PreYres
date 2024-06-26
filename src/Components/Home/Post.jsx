@@ -1,18 +1,40 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Post = () => {
   const navigate = useNavigate();
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const dropdownRef = useRef(null);
 
   const handleButtonClick = (event) => {
     event.stopPropagation();
     setIsDropdownVisible(!isDropdownVisible);
   };
 
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const dropdownItems = [
+    { label: 'Modificar', link: '#' },
+    { label: 'Eliminar', link: '#' },
+    { label: 'Dashboard', link: '#' },
+    { label: 'Settings', link: '#' },
+    { label: 'Earnings', link: '#' },
+  ];
+
   return (
-    <div className="relative items-center justify-center w-full">
-      <button className='w-full' onClick={() => navigate("/publicacion")}>  
+    <div className="relative items-center justify-center w-full" ref={dropdownRef}>
+      <button className="w-full" onClick={() => navigate("/publicacion")}>
         <div className="p-5 shadow-md bg-white">
           <div className="flex w-full justify-between border-b pb-3">
             <div className="flex items-center space-x-3">
@@ -23,13 +45,12 @@ const Post = () => {
               <div className="text-xs text-neutral-500">2 hours ago</div>
               <button
                 id="dropdownMenuIconHorizontalButton"
-                data-dropdown-toggle="dropdownDotsHorizontal"
-                className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none text-white focus:ring-gray-50 bg-gray-800 hover:bg-gray-700 focus:ring-gray-600"
+                className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 type="button"
                 onClick={handleButtonClick}
-              > 
+              >
                 <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
-                  <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
+                  <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
                 </svg>
               </button>
             </div>
@@ -61,19 +82,23 @@ const Post = () => {
       </button>
 
       {isDropdownVisible && (
-        <div id="dropdownDotsHorizontal" className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg  w-44 bg-gray-700 divide-gray-600 right-0 top-12">
-          <ul className="py-2 text-sm text-gray-700 text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 hover:text-white">Modificar</a>
-            </li>
-            <li>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-100 hover:bg-gray-600 hover:text-white">Eliminar</a>
-            </li>
+        <div id="dropdownDotsHorizontal" className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute top-full right-0 mt-2">
+          <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
+            {dropdownItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.link} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
+          <div className="py-2">
+            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Separated link</a>
+          </div>
         </div>
       )}
     </div>
   );
-}
+};
 
 export default Post;

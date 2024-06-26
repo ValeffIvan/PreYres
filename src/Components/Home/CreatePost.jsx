@@ -1,15 +1,16 @@
 import { useState } from "react";
 
-
 const CreatePost = () => {
   const [characterCount, setCharacterCount] = useState(300);
-  const [image, setImage] = useState(null); // Add a state to store the uploaded image
+  const [image, setImage] = useState(null); // State to store the uploaded image
 
+  // Handle text input change and update character count
   const handleTextInputChange = (e) => {
     const textLength = e.target.value.length;
     setCharacterCount(300 - textLength);
   };
 
+  // Handle image upload and set image state
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
@@ -26,7 +27,7 @@ const CreatePost = () => {
           id="postContent"
           name="postContent"
           rows="4"
-          className="w-full px-4 py-2 sm:text-sm sm:leading-5 resize-none rounded-t-2xl border-none outline-none focus:outline-none border-color:transparent box-shadow:none"
+          className="w-full px-4 py-2 sm:text-sm sm:leading-5 resize-none rounded-t-2xl border-none outline-none focus:outline-none"
           style={{ boxShadow: 'none', outline: 'none', borderColor: 'transparent' }}
           placeholder="Escribe una pregunta..."
           onChange={handleTextInputChange}
@@ -37,13 +38,13 @@ const CreatePost = () => {
         </span>
       </div>
       <div className="flex items-center rounded-b-2xl justify-between border bg-gray-700 border-gray-700 pl-2 pr-2">
-        <div className="border-2 rounded-md">
+        <div className="relative border-2 rounded-md">
           <input
             type="file"
             id="fileAttachment"
             name="fileAttachment"
             className="absolute opacity-0 cursor-pointer"
-            onChange={handleImageChange} 
+            onChange={handleImageChange}
           />
           {image && (
             <img src={image} alt="Uploaded image" className="w-24 h-24 object-cover" />
@@ -60,10 +61,10 @@ const CreatePost = () => {
         </div>
         <div className="flex justify-end text-left">
           <div className="flex items-center text-left">
-            <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
-            <label htmlFor="link-checkbox" className="text-white ms-2 text-sm font-medium text-gray-700 ">Preguntar como anónimo</label>
+            <input id="link-checkbox" type="checkbox" className="rounded" />
+            <label htmlFor="link-checkbox" className="text-white ms-2 text-sm font-medium text-gray-700">Preguntar como anónimo</label>
           </div>
-          <button type="submit" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md "> Preguntar </button>
+          <button type="submit" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md"> Preguntar </button>
         </div>
       </div>
     </form>

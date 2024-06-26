@@ -1,6 +1,6 @@
 const ConfirmationCode = () =>{
   return (
-    <div className="w-full bg-white rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
+    <div className="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
       <div className="mx-auto flex w-full max-w-md flex-col space-y-16">
         <div className="flex flex-col items-center justify-center text-center space-y-2">
           <div className="font-semibold text-3xl">

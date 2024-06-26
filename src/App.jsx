@@ -17,10 +17,8 @@ import Ads from "./Components/SideBar/Ads";
 import SearchPage from "./Pages/SearchPage";
 import MobileMenu from "./Components/SideBar/MobileMenu";
 
-
 const App = () => {
-
-  const [isAuth] = useState(localStorage.getItem('isAuth'))
+  const [isAuth, setIsAuth] = useState(Boolean(localStorage.getItem('isAuth')));
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -36,23 +34,21 @@ const App = () => {
   }, []);
 
   return (
-    <Router>  
-        {isAuth ? (<DiscoverPeople/>) :  (<Ads/>)}
-        {isMobile && isAuth ? (<MobileMenu/>) : (isAuth ? (<SideBar/>) : <SideBarLogin/>)}
+    <Router>
+      {isAuth ? <DiscoverPeople /> : <Ads />}
+      {isMobile && isAuth ? <MobileMenu /> : isAuth ? <SideBar /> : <SideBarLogin />}
 
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/perfil" element={<Profile/>} />
-          <Route path="/configuracion" element={<Configuration/>} />
-          <Route path="/notificaciones" element={<Notifications/>} />
-          <Route path="/publicacion" element={<Publication/>} />
-          <Route path="/comentario" element={<Configuration/>} />
-          <Route path="/buscador" element={<SearchPage/>} />
-        </Routes>
-        
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/perfil" element={<Profile />} />
+        <Route path="/configuracion" element={<Configuration />} />
+        <Route path="/notificaciones" element={<Notifications />} />
+        <Route path="/publicacion" element={<Publication />} />
+        <Route path="/comentario" element={<Configuration />} />
+        <Route path="/buscador" element={<SearchPage />} />
+      </Routes>
     </Router>
   );
-}
+};
 
 export default App;
