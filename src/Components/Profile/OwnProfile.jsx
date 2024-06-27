@@ -5,12 +5,12 @@ import Post from "../Home/Post";
 
 const OwnProfile = () =>{
   return (
-    <div className="items-center justify-center xl:pr-24 xl:pl-24 l:pl-10 mt-5">
-			<div>
+    <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64">
+			<div className="w-full max-w-5xl">
 				<CreatePost/>
 			</div>
       <br />
-			<div>
+			<div className="w-full max-w-5xl">
         <Tabs defaultActiveKey="answers" id="fill-tab-example" fill>
           <Tab eventKey="answers" title="Respuestas" className="border-1">
             <Post/>

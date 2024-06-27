@@ -5,8 +5,8 @@ import General from '../Components/Notifications/General';
 
 const Notifications = () =>{
   return(
-    <div className="sm:ml-96 sm:mr-64 justify-center h-screen ">
-      <div className="p-4 h-full flex flex-col">
+    <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64">
+      <div className="w-full max-w-5xl">
         <h1 className="text-2xl font-bold mb-7 mt-5 text-black">
           <span className="inline-flex items-center">
             <svg className="w-10 h-10 text-gray-800 text-black mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -14,7 +14,7 @@ const Notifications = () =>{
             </svg><span className='text-black'>Notificaciones</span>
           </span>
         </h1>
-        <div className="border-black border-1 h-full rounded-xl">
+        <div className="border-black h-full rounded-xl">
           <Tabs defaultActiveKey="questions" id="fill-tab-example" fill className='sm:bg-gray-800 sm:border-gray-700 hover:sm:bg-gray-800 active:sm:bg-gray-800 link:sm:bg-gray-800 rounded-t-xl color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
             <Tab eventKey="questions" title="Preguntas" className='text-black bg-gray-100 h-full'>
               <Questions/>

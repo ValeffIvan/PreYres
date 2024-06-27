@@ -1,31 +1,21 @@
-@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
-
 body {
-  font-family: 'Poppins', sans-serif;
-  padding-bottom: 70px; /* Adjust this value according to the height of your MobileMenu */
+    font-family: 'Poppins', sans-serif;
 }
-
+.hover\:w-full:hover {
+    width: 100%;
+}
+.group:hover .group-hover\:w-full {
+    width: 100%;
+}
 .group:hover .group-hover\:inline-block {
-  display: inline-block;
+    display: inline-block;
 }
 .group:hover .group-hover\:flex-grow {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
-.MobileMenu {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white; /* Or the background color you prefer */
-  z-index: 10; /* Adjust as needed */
-}
-
-.text-l {
-  font-size: 1.25rem; /* Adjust font size as needed */
-}
-
-.text-s {
-  font-size: 0.875rem; /* Adjust font size as needed */
+.mobile-menu {
+    overflow: hidden; /* Ensures content does not overflow */
 }

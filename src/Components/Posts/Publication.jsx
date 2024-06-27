@@ -11,10 +11,10 @@ const Publication = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center p-4">
-        <div className="w-full max-w-4xl">
+      <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64 mt-5">
+        <div className="w-full max-w-5xl">
           <div className="flex items-center">
-            <button className="flex items-center text-gray-900" onClick={() => setRegistered(3)}>
+            <button className="flex items-center text-gray-900" >
               <FaArrowLeft className="mr-2" /> Volver
             </button>
           </div>
@@ -62,10 +62,10 @@ const Publication = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center p-4">
-        <div className="w-full max-w-4xl">
+      <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64">
+        <div className="w-full max-w-5xl">
           <div className="flex cursor-pointer items-center transition hover:text-slate-600">
-            <h1 className="text-black pl-24 flex">
+            <h1 className="text-black flex">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
               </svg>
@@ -122,7 +122,7 @@ const Publication = () => {
             </div>
             <hr />
           </div>
-          <div className="items-center justify-center xl:pr-24 xl:pl-24 l:pl-10">
+          <div className="items-center justify-center ">
             <div className="items-center justify-center w-full bg-gray-200">
               <div className="p-5 shadow-md">
                 <div className="flex w-full justify-between border-b pb-3">
@@ -172,7 +172,6 @@ const Publication = () => {
           </div>
         </div>
       </div>
-      <hr />
     </>
   );
 }

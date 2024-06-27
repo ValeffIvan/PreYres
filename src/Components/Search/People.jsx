@@ -9,7 +9,7 @@ const People = () =>{
                           <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Neil image"/>
                       </div>
                       <div class="flex-1 min-w-0">
-                          <p class="text-sm font-medium text-gray-900 truncate text-white">
+                          <p class="text-sm font-medium text-gray-900 truncate">
                               Neil Sims
                           </p>
                           <p class="text-sm text-gray-500 truncate text-gray-400">
@@ -27,7 +27,7 @@ const People = () =>{
                           <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Bonnie image"/>
                       </div>
                       <div class="flex-1 min-w-0">
-                          <p class="text-sm font-medium text-gray-900 truncate text-white">
+                          <p class="text-sm font-medium text-gray-900 truncate">
                               Bonnie Green
                           </p>
                           <p class="text-sm text-gray-500 truncate text-gray-400">

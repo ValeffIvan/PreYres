@@ -37,7 +37,7 @@ const App = () => {
     <Router>
       {isAuth ? <DiscoverPeople /> : <Ads />}
       {isMobile && isAuth ? <MobileMenu /> : isAuth ? <SideBar /> : <SideBarLogin />}
-
+      <div className="main-content pb-20"> {/* Ajusta la clase main-content */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/perfil" element={<Profile />} />
@@ -47,6 +47,7 @@ const App = () => {
         <Route path="/comentario" element={<Configuration />} />
         <Route path="/buscador" element={<SearchPage />} />
       </Routes>
+      </div>
     </Router>
   );
 };

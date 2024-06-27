@@ -6,8 +6,8 @@ import ProfileConfig from '../Components/Configuration/Profile';
 
 const Configuration = () => {
   return (
-    <div className="sm:ml-96 sm:mr-64 justify-center h-screen ">
-      <div className="p-4 h-full flex flex-col">
+    <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64">
+      <div className="w-full max-w-5xl">
         <h1 className="text-2xl font-bold mb-7 mt-5 text-black">
           <span className="inline-flex items-center">
             <svg className="w-10 h-10 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
