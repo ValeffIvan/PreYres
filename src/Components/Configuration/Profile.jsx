@@ -35,37 +35,28 @@ const ProfileConfig = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-10 flex flex-col w-3/4 justify-between">
-        <div> 
-          <h1 className="font-bold tracking-normal text-3xl">Url del Perfil</h1>  
-          {isEditing === false ?(
-            <div className="flex">
-              <input type="text" disabled className="w-full rounded-full mr-5 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl}/>
-              <button onClick={() => setIsEditing(true)} className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Modificar</button>
-            </div>
-          ) : (
-          <form className="flex">
-              <input type="text" className="w-full rounded-full mr-5 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl} onChange={(e) => setEditedUrl(e.target.value)} />
-              <button type="submite" className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Aceptar</button>
-              <button onClick={() => setIsEditing(false)} className="m-1 ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Cancelar</button>
+    <div className="container mx-auto py-10 flex flex-col px-4 sm:px-0">
+      <div className="w-full sm:w-3/4 lg:w-1/2 mx-auto">
+        <h1 className="font-bold tracking-normal text-3xl mb-4">Url del Perfil</h1>
+        {isEditing === false ? (
+          <div className="flex flex-col sm:flex-row items-center">
+            <input type="text" disabled className="w-full rounded-full sm:mr-5 mb-2 sm:mb-0 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" value={editedUrl} />
+            <button onClick={() => setIsEditing(true)} className="m-1 sm:m-0  bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Modificar</button>
+          </div>
+        ) : (
+          <form className="flex flex-col sm:flex-row items-center" onSubmit={(e) => { e.preventDefault(); setIsEditing(false); handleEditPost(); }}>
+            <input type="text" className="w-full rounded-full sm:mr-5 mb-2 sm:mb-0 border-2 bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" value={editedUrl} onChange={(e) => setEditedUrl(e.target.value)} />
+            <button type="submit" className="m-1 sm:m-0 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 py-2 px-4 rounded-full">Aceptar</button>
+            <button type="button" onClick={() => setIsEditing(false)} className="m-1 sm:m-0  bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-full">Cancelar</button>
           </form>
-          )}
-        </div>
-        <div className="items-center mt-2">
-          <label htmlFor="link-checkbox" className="text-black ms-2 text-sm font-medium mr-3">¿Pueden realizarme preguntas de forma anonima?</label>
+        )}
+        <div className="flex items-center mt-4">
+          <label htmlFor="link-checkbox" className="text-black text-sm font-medium mr-3">¿Pueden realizarme preguntas de forma anónima?</label>
           <input id="link-checkbox" type="checkbox" value="" className="rounded"/>
+        </div>
       </div>
     </div>
   );
 }
 
 export default ProfileConfig;
-
-    {/*
-    <div className="container mx-auto px-4 py-14 sm:px-6 xl:px-12">
-      <div className="flex flex-col items-center justify-center space-y-6 text-center">
-        <h1 className="text-4xl font-bold tracking-normal sm:text-5xl lg:text-6xl">Blog</h1>
-        <p className="max-w-screen-sm text-lg text-gray-600 sm:text-2xl">We write about tips, best tools, and resources to create and sell interactive online programming courses.</p>
-        <form className="flex w-full max-w-md flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3"><input type="email" required="" className="w-full rounded-md border bg-gray-50 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:cursor-not-allowed disabled:opacity-50" placeholder="you@website.com" value="" /><button type="submit" className="w-full rounded-md border border-blue-500 bg-blue-500 py-2 px-6 text-white transition hover:border-blue-600 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:border-blue-500 disabled:hover:bg-blue-500 sm:max-w-max">Subscribe</button></form>
-      </div>
-    </div>  */}

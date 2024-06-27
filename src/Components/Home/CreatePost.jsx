@@ -64,9 +64,9 @@ const CreatePost = () => {
         <div className="flex flex-col sm:flex-row items-center">
           <div className="flex items-center mb-2 sm:mb-0">
             <input id="link-checkbox" type="checkbox" className="rounded" />
-            <label htmlFor="link-checkbox" className="text-white ml-2 text-sm font-medium text-gray-700">Preguntar como anónimo</label>
+            <label htmlFor="link-checkbox" className="text-white ml-2 text-sm font-medium ">Preguntar como anónimo</label>
           </div>
-          <button type="submit" className="m-1 ml-0 sm:ml-4 text-white bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md"> Preguntar </button>
+          <button type="submit" className="m-1 ml-0 sm:ml-4 bg-indigo-600 tracking-wide hover:bg-blue-600 text-white py-2 px-4 rounded-md"> Preguntar </button>
         </div>
       </div>
     </form>

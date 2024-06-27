@@ -10,7 +10,7 @@ const SideBarLogin = () => {
         <h1 className="text-xl font-bold mb-2 leading-tight text-center tracking-tight md:text-2xl text-white">
             PreYres
         </h1>
-        <input placeholder="Buscar en PreYres..." className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full px-2 py-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark"/>
+        <input placeholder="Buscar en PreYres..." className=" border  sm:text-sm rounded-full focus:ring-primary-600 focus:border-primary-600 block w-full px-2 py-2 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark"/>
       </div>
       <div>
         <LoginForm />;  
