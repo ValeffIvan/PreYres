@@ -6,8 +6,8 @@ import ProfileConfig from '../Components/Configuration/Profile';
 
 const Configuration = () => {
   return (
-    <div className="sm:ml-96 sm:mr-64 justify-center h-screen ">
-      <div className="p-4 h-full flex flex-col">
+    <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64">
+      <div className="w-full max-w-5xl">
         <h1 className="text-2xl font-bold mb-7 mt-5 text-black">
           <span className="inline-flex items-center">
             <svg className="w-10 h-10 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -16,8 +16,8 @@ const Configuration = () => {
             </svg><span className='text-black-100'>Configuración</span>
           </span>
         </h1>
-        <div className="border-black border-1 h-full rounded-xl">
-          <Tabs defaultActiveKey="profile" id="fill-tab-example" fill className='sm:bg-gray-800 sm:border-gray-700 hover:sm:bg-gray-800 active:sm:bg-gray-800 link:sm:bg-gray-800 rounded-t-lg color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-tabs-link-active-color": "white", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
+        <div className="h-full rounded-xl">
+          <Tabs defaultActiveKey="profile" id="fill-tab-example" fill className='bg-gray-800 border-gray-700 hover:bg-gray-800 active:bg-gray-800 link:bg-gray-800 rounded-t-xl color-white' style={{ "--bs-nav-tabs-link-active-bg": "gray-700", "--bs-nav-tabs-border-width": "solid transparent", "--bs-nav-tabs-link-active-color": "white", "--bs-nav-link-color": "gray", "--bs-nav-link-hover-color": "gray" }}>
             <Tab eventKey="profile" title="Perfil" className='text-black  h-full flex-grow'>
               <ProfileConfig />
             </Tab>

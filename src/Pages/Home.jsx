@@ -1,10 +1,10 @@
 import Post from "../Components/Home/Post";
-import OwnProfile from "../Components/Profile/OwnProfile";
 
 const Home = () => {
+
   return (
-    <div className="sm:ml-96 sm:mr-64">
-      <OwnProfile/>
+    <div className="flex flex-col items-center justify-center p-4 sm:ml-96 sm:mr-64 mt-5">
+      <Post/>
     </div>
   );
 };

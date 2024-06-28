@@ -38,7 +38,7 @@ const Publication= () => {
                 <div className="text-lg  text-gray-400">Respuesta de Joe Smith</div>
               </div>
               <div className="flex items-center space-x-8">
-                <div className="text-xs text-neutral-500 text-gray-400">2 hours ago</div>
+                <div className="text-xs  text-gray-400">2 hours ago</div>
               </div>
             </div>
           </div>

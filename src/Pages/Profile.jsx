@@ -1,16 +1,16 @@
 import OwnProfile from "../Components/Profile/OwnProfile";
-import ProfileCard from "../Components/Profile/ViewProfileCard"
+import ProfileCard from "../Components/Profile/ProfileCard"
 
 const Profile = () => {
   return (
-    <div className="p-4 sm:ml-96 sm:mr-64">
+    <>
       <div>
         <ProfileCard/>
       </div>
       <div >
         <OwnProfile />
       </div>
-    </div>
+    </>
   );
 };
 

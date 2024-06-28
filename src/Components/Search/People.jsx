@@ -1,48 +1,42 @@
-const People = () =>{
-  return (
-  <div class="w-full h-full p-4  bg-white sm:p-8 bg-gray-800 border-gray-700">
-    <div class="flow-root">
-          <ul role="list" class="divide-y divide-gray-200 divide-gray-700">
-              <li class="py-3 sm:py-4">
-                  <div class="flex items-center space-x-4">
-                      <div class="flex-shrink-0">
-                          <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-1.jpg" alt="Neil image"/>
-                      </div>
-                      <div class="flex-1 min-w-0">
-                          <p class="text-sm font-medium text-gray-900 truncate text-white">
-                              Neil Sims
-                          </p>
-                          <p class="text-sm text-gray-500 truncate text-gray-400">
-                              Descripcion
-                          </p>
-                      </div>
-                      <button className="flex cursor-pointer items-center transition hover:text-white bg-green-500 hover:bg-green-700 mr-5 rounded-full pl-8 pr-6 pt-2 pb-2 text-lg text-white">
-                        Seguir
-                      </button>
+const People = () => {
+    return (
+      <div className="bg-white shadow-md rounded-lg overflow-hidden w-full">
+        <ul role="list" className="divide-y divide-gray-200">
+          {[{
+            name: 'Augusto Sims',
+            description: 'Descripcion',
+            img: 'https://flowbite.com/docs/images/people/profile-picture-1.jpg',
+            buttonText: 'Seguir',
+            buttonClass: 'bg-green-400 hover:bg-green-500'
+          },
+          {
+            name: 'Augusto Green',
+            description: 'Descripcion',
+            img: 'https://flowbite.com/docs/images/people/profile-picture-3.jpg',
+            buttonText: 'Siguiendo',
+            buttonClass: 'bg-red-400 hover:bg-red-500'
+          }].map((person, index) => (
+            <li key={index} className="flex items-center justify-between p-5">
+              <div className="flex items-center space-x-3">
+                <div className="flex-none">
+                  <img className="w-14 h-14 object-cover rounded-full" src={person.img} alt={`${person.name} image`} />
+                </div>
+                <div className="flex-auto ml-5">
+                  <div className="flex flex-col">
+                    <div className="text-lg text-gray-800 font-bold">{person.name}</div>
+                    <div className="text-gray-500">{person.description}</div>
                   </div>
-              </li>
-              <li class="py-3 sm:py-4">
-                  <div class="flex items-center space-x-4">
-                      <div class="flex-shrink-0">
-                          <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Bonnie image"/>
-                      </div>
-                      <div class="flex-1 min-w-0">
-                          <p class="text-sm font-medium text-gray-900 truncate text-white">
-                              Bonnie Green
-                          </p>
-                          <p class="text-sm text-gray-500 truncate text-gray-400">
-                            Descripcion
-                          </p>
-                      </div>
-                      <button className="flex cursor-pointer items-center transition hover:text-white bg-red-500 hover:bg-red-700 mr-5 rounded-full pl-8 pr-6 pt-2 pb-2 text-lg text-white">
-                        Siguiendo
-                      </button>
-                  </div>
-              </li>
-          </ul>
-    </div>
-  </div>
-  );
-}
-
-export default People;
+                </div>
+              </div>
+              <button className={`${person.buttonClass} px-5 py-2 rounded-full text-white font-medium`}>
+                {person.buttonText}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+  
+  export default People;
+  
