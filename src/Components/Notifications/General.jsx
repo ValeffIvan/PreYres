@@ -26,7 +26,7 @@ const General = () => {
             <div className="h-8 w-8 rounded-full" style={{ backgroundImage: `url(${notification.avatar})`, backgroundSize: 'cover' }}></div>
             <div className="flex flex-col">
               <div className="text-xs text-left text-neutral-500">{notification.time}</div>
-              <div className="text-sm text-slate-700">{notification.userAction} <strong>{notification.action}</strong> {notification.target}</div>
+              <div className="text-sm text-left text-slate-700">{notification.userAction} <strong>{notification.action}</strong> {notification.target}</div>
             </div>
           </button>
         </div>
