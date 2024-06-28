@@ -13,7 +13,7 @@ const MobileMenu = () => {
     else if (path === "/perfil") setSelected("profile");
     else if (path === "/notificaciones") setSelected("notifications");
     else if (path === "/buscador") setSelected("search");
-    else if (path === "/configuracion") setSelected("settings");
+    else if (path === "/mobileConfig") setSelected("settings");
   }, [location]);
 
   const handleSelect = (buttonName, path) => {
@@ -89,7 +89,7 @@ const MobileMenu = () => {
             className={`flex flex-col items-center justify-center mx-auto px-4 pt-2 w-full ${
               selected === "settings" ? "text-indigo-500" : "text-gray-400"
             }`}
-            onClick={() => handleSelect("settings", "/configuracion")}
+            onClick={() => handleSelect("settings", "/mobileConfig")}
           >
             <i className="far fa-cog text-2xl mb-1"></i>
             <span
