@@ -48,5 +48,3 @@ To get a local copy up and running follow these simple steps.
   npm run dev
   # or
   yarn dev
-
-
