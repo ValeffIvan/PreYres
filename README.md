@@ -1,30 +1,52 @@
+# Social Media Page
 
-# PreYres
+## Table of Contents
 
-Red Social
+1. [Project Overview](#project-overview)
+2. [Tech Stack](#tech-stack)
+3. [Getting Started](#getting-started)
 
+## Project Overview
 
+Welcome to the Social Media Page project! This is a front-end application built with React and Vite. It aims to provide a user-friendly interface for a social media platform. Currently, this project includes only the front-end components.
 
+## Tech Stack
 
-## Requisitos
+- **React:** A JavaScript library for building user interfaces.
+- **Vite:** A build tool that aims to provide a faster and leaner development experience for modern web projects.
+- **React Bootstrap:** A popular UI framework for building responsive and modern web interfaces with React.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+- **CSS Modules:** For scoped and modular styles.
 
-<img src="https://www.muylinux.com/wp-content/uploads/2022/04/nodejs.png" alt="Node.js" width="200"/>
+## Getting Started
 
-Puedes instalarlo aca:
-https://nodejs.org/en
-## Iniciarlo Localmente
+To get a local copy up and running follow these simple steps.
 
-Abre el proyecto desde la terminal, y sigue los siguientes pasos:
+### Prerequisites
 
-1. Instala las dependencias
+- Node.js (>= 14.x)
+- npm (>= 6.x) or yarn (>= 1.22.x)
 
-```bash
-  npm install
-```
+### Installation
 
-2. Inicia el proyecto
+1. Clone the repo
 
-```bash
+   ```sh
+   git clone https://github.com/yourusername/social-media-page.git
+
+2. Install NPM packages
+
+   ```sh
+   cd social-media-page
+   npm install
+   # or
+   yarn install
+
+3. Start the development server
+ 
+  ```sh
   npm run dev
-```
+  # or
+  yarn dev
+
 
